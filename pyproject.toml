@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "plastic-frame"
+version = "0.1.0"
+description = "\"手机胶框检测python项目\""
+authors = ["Cabbage"]
+license = "GPL3.0"
+readme = "README.md"
+packages = [{include = "plastic_frame"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.9.0.80"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
