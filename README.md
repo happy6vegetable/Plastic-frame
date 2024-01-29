@@ -11,8 +11,9 @@
 ## 开发者
 
 - happy6vegetable
-
-  
+- ScatteredWood
+- WinterBlessing
+- xyx6152
 
 ## 开发环境搭建步骤
 
