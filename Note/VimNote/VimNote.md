@@ -92,26 +92,31 @@ vim 静夜思.txt
 
 
 
-
+![img](TB1VZ4LHG61gK0jSZFlXXXDKFXa-911-414.png)
 
 \2. 按下i进入输入模式，输入《静夜思》的诗名。
 
+![img](TB1v7BEHQL0gK0jSZFtXXXQCXXa-913-410.png)
 
 \3. 按下ECS键回到命令模式，并输入底线命令:ce，使诗名居中。
 
+![img](TB1S58EHUz1gK0jSZLeXXb9kVXa-905-428.png)
 
 \4. 按下o键换行并进入输入模式，输入第一行诗。
 
+![img](TB1Db8GHHr1gK0jSZFDXXb9yVXa-904-412.png)
 
 \5. 按下ECS键回到命令模式，并输入底线命令:ce，使第一行诗居中。
 
+![img](TB1poNDHFY7gK0jSZKzXXaikpXa-902-415.png)
 
 \6. 按下o键换行并进入输入模式，输入第二行诗。
 
+![img](TB1YGNHHKH2gK0jSZFEXXcqMpXa-907-412.png)
 
 \7. 按下ECS键回到命令模式，并输入底线命令:ce，使第二行诗居中。
 
-
+![img](TB1HoNDHLb2gK0jSZK9XXaEgFXa-905-412.png)
 
 \8. 在命令模式中执行底线命令:wq离开vim。
 

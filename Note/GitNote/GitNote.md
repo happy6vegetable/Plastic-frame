@@ -1,4 +1,4 @@
-#git init
+# git init
 
 执行如下命令，使用当前目录作为Git仓库，进行初始化。该命令执行完后会在当前目录生成一个.git 目录。
 
@@ -8,13 +8,15 @@ git init
 
 
 
+![img](7dbf1163d18462088b8f0243d0be6b2.png)
+
 e. 执行如下命令，查看生成的.git的目录。
 
 ```
 ls -lA
 ```
 
-#使用git clone克隆远程仓库。
+# 使用git clone克隆远程仓库。
 
 您可以使用git clone从现有Git仓库中拷贝项目（类似svn checkout）。
 
@@ -33,7 +35,7 @@ git clone <repo> <directory>
 
 Git本地仓库有三大区域：工作区、暂存区、版本区。创建、修改文件等操作是在工作区，git add命令是将工作区的内容添加到暂存区，git commit命令将临时存区内容添加到本地仓库中。
 
-#git add命令语法如下。
+# git add命令语法如下。
 
 添加一个或多个文件到暂存区。
 
@@ -59,7 +61,7 @@ git add .
 
 
 
-#git commit命令语法如下。
+# git commit命令语法如下。
 
 提交暂存区到本地仓库中。
 
@@ -108,6 +110,7 @@ Welcome to Aliyun！！！
 
 添加后的文件内容如下所示。
 
+![img](0c7d85291c1949d99144d0dbd818c951.png)
 
 c. 执行如下命令，将Aliyun.txt文件提交到暂存区。
 
@@ -119,7 +122,7 @@ git add Aliyun.txt
 
 与网站上的库建立连接：
 
-
+![image-20240112101559830](image-20240112101559830.png)
 
 
 
@@ -156,7 +159,7 @@ git push origin master
 
 
 
-#git status
+# git status
 
 d. 执行如下命令，查看当前仓库文件状态。
 
@@ -168,6 +171,7 @@ git status
 
 返回结果如下，您可以跟踪到新的文件Aliyun.txt。
 
+![img](cd3e203304a04382b4e1ca7ef64a4d35.png)
 
 e. 执行如下命令，将Aliyun.txt文件提交到git仓库。
 
@@ -179,6 +183,7 @@ git commit -m 'wrote a new file'
 
 返回结果如下，表示您已将Aliyun.txt文件成功提交到仓库。
 
+![img](7df999b176fc422bb04503c6cf702306.png)
 
 f. 执行如下命令，再次查看仓库状态后，返回结果表示无任何内容新增或修改。
 
@@ -188,9 +193,11 @@ git status
 
 
 
+![img](e0724e0a27e048ada38b45d93cdfcccd.png)
 
 
-#Git版本回退
+
+# Git版本回退
 ## git reset命令
 
 用于回退版本，可以指定退回某一次提交的版本。git reset命令语法如下。
@@ -219,6 +226,7 @@ vim /root/git/Aliyun.txt
 
 wrote a new file
 
+![img](fa1fa00444844069801a7436605266b3.png)
 
 
 2. 执行如下命令，将Aliyun.txt文件提交到暂存区。
@@ -232,15 +240,15 @@ git commit -m 'more a file'
 git log
 返回结果如下，您可以看到两条提交日志记录。
 
-
+![img](afa130f0687a49b6b8f465e9a6ded078.png)
 
 5. 执行如下命令，将Aliyun.txt回退到wrote a file版本。
 
 git reset --hard HEAD^
 
+![img](afa130f0687a49b6b8f465e9a6ded078.png)
 
-
-#6. Git的文件比较
+# 6. Git的文件比较
 
 git diff命令用于比较文件的不同，即比较文件在暂存区和工作区的差异。git diff命令显示已写入暂存区和已经被修改但尚未写入暂存区文件的区别。git diff的语法如下。
 
@@ -312,7 +320,7 @@ git status
 
 返回结果如下，您可以看见有需要提交的更改文件。
 
-
+![img](52637414d5a6469fbb4a3d3618606582.png)
 
 \4. 执行如下命令，再次修改Aliyun.txt文件。
 
@@ -332,6 +340,7 @@ this is four new file
 
 添加后的文件内容如下所示。
 
+![img](9ca08a77bba84f818ded88998acf8511.png)
 
 \5. 执行如下命令，查看仓库状态。
 
@@ -343,7 +352,7 @@ git status
 
 返回结果如下，表示暂存区有尚未提交的文件变更。
 
-
+![img](d17baf88bf5541a6b892d2c0facaa00e.png)
 
 \6. 执行如下命令，将Aliyun.txt文件提交到git仓库。
 
@@ -363,6 +372,7 @@ git status
 
 返回结果如下，您可以看见第二次修改的文件没有被提交。
 
+![img](beb359b3a51a4b94a9eded2f6c98fbca.png)
 
 \8. 执行如下命令，查看工作区和版本库里面最新版本的区别。
 
@@ -370,7 +380,7 @@ git status
 git diff HEAD -- Aliyun.txt
 ```
 
-#7. Git的撤销修改
+# 7. Git的撤销修改
 
 Git的撤销修改有以下两种方式。
 
@@ -386,6 +396,7 @@ cat Aliyun.txt
 
 返回结果如下。
 
+![img](0d56ad1352cc47f98d7ac65e007043ef.png)
 
 b. 执行如下命令，修改Aliyun.txt文件。
 
@@ -405,6 +416,7 @@ vim /root/git/Aliyun.txt
 
 添加后的文件内容如下所示。
 
+![img](979ac733a208489b809c415c4d65c6a2.png)
 
 c. 执行如下命令，查看修改后Aliyun.txt文件内容。
 
@@ -416,9 +428,9 @@ cat Aliyun.txt
 
 返回结果如下，您可以看见您修改后文件的内容。
 
+![img](ff829e931f9b4c1698a332a770b635b4.png)
 
-
-##d. 执行如下命令，撤销对Aliyun.txt文件的修改。
+## d. 执行如下命令，撤销对Aliyun.txt文件的修改。
 
 ```
 git checkout Aliyun.txt
@@ -436,7 +448,7 @@ cat Aliyun.txt
 
 返回结果如下，您可以看见您新增后没有提交到暂存区的内容已经被撤销。
 
-
+![img](b1c3ca5adb8b4836ba295e2a3ee8f4d3.png)
 
 \2. 文件修改后添加到暂存区，撤销暂存区的修改就回到添加到暂存区后的状态，需要继续执行撤销文件操作，才能完全撤销成功。
 
@@ -450,6 +462,7 @@ cat Aliyun.txt
 
 返回结果如下。
 
+![img](ef1db089edbf4945b10b0e5fa1002040.png)
 
 b. 执行如下命令，修改Aliyun.txt文件。
 
@@ -469,6 +482,7 @@ vim /root/git/Aliyun.txt
 
 添加后的文件内容如下所示。
 
+![img](05c2b175ae704ffeb22b6e7c53c484ac.png)
 
 c. 执行如下命令，查看修改后Aliyun.txt文件内容。
 
@@ -480,9 +494,9 @@ cat Aliyun.txt
 
 返回结果如下，您可以看见您修改后文件的内容。
 
+![img](0f8892270c7b43139f8337abea5ad5aa.png)
 
-
-##d. 执行如下命令，将修改的Aliyun.txt文件提交到暂存区。
+## d. 执行如下命令，将修改的Aliyun.txt文件提交到暂存区。
 
 ```
 git add Aliyun.txt
@@ -490,7 +504,7 @@ git add Aliyun.txt
 
 
 
-##e. 执行如下命令，在暂存区取消对Aliyun.txt文件暂存区的更改。
+## e. 执行如下命令，在暂存区取消对Aliyun.txt文件暂存区的更改。
 
 ```
 git reset HEAD Aliyun.txt
@@ -498,7 +512,7 @@ git reset HEAD Aliyun.txt
 
 
 
-##f. 执行如下命令，撤销文件。
+## f. 执行如下命令，撤销文件。
 
 ```
 git checkout Aliyun.txt
@@ -516,7 +530,9 @@ cat Aliyun.txt
 
 返回结果如下，您可以看到提交到暂存区的内容已经被撤销。
 
-#8. Git的删除文件
+![img](0368d262a6544240a0fc1fc5cc516bc0.png)
+
+# 8. Git的删除文件
 
 Git的删除方式有两种，如下。
 
@@ -532,6 +548,7 @@ ls
 
 返回结果如下，您可以看到git目录下所有文件。
 
+![img](15fef456839a4035be8b0039bdd63e75.png)
 
 b. 执行如下命令，误删除工作区Aliyun.txt文件。
 
@@ -551,7 +568,7 @@ git status
 
 返回结果如下，您可以看到仓库有一条删除文件的记录。
 
-
+![img](ea6e07c00f7e4ec28082c16396b7d697.png)
 
 d. 执行如下命令，撤销文件删除操作。
 
@@ -589,7 +606,7 @@ git commit -m 'delete Aliyun.txt'
 
 返回结果如下。
 
-
+![img](9c828c9b723545eaa0dc8370dc069f25.png)
 
 c. 执行如下命令，查看文件是否被删除。
 
@@ -601,12 +618,13 @@ ls
 
 返回结果如下，您可以看到文件已经被删除。
 
-
+![img](6d093c83e70a4797a279611fd2147003.png)
 
 d. 执行如下命令，再次查看仓库状态git status，您可以看到在暂存区删除的文件已经提交。
 
+![img](3ff2521873654329ad5bfb07d0891c73.png)
 
-#9. Git分支管理
+# 9. Git分支管理
 
 \1. 查看分支。
 
@@ -618,7 +636,7 @@ git branch
 
 
 
-##2. 创建分支。
+## 2. 创建分支。
 
 执行如下命令，创建分支。
 
@@ -628,7 +646,7 @@ git branch test
 
 
 
-##3. 切换分支。
+## 3. 切换分支。
 
 a. 执行如下命令，切换分支。
 
@@ -648,8 +666,9 @@ git branch
 
 返回结果如下，您可以看到已经成功切换到test分支。
 
+![img](668fda76ce214e0c8b30c16710944f6f.png)
 
-##4. 创建并切换分支。
+## 4. 创建并切换分支。
 
 a. 执行如下命令，您可以实现创建分支并切换分支。
 
@@ -669,9 +688,9 @@ git branch
 
 返回结果如下，您可以看到已经成功切换到test2分支。
 
+![img](024e8b435b674c34800598011515c744.png)
 
-
-\5. 删除分支。
+## 5. 删除分支。
 
 a. 执行如下命令，删除分支。
 
@@ -691,7 +710,7 @@ git branch
 
 
 
-##6. 合并分支。
+## 6. 合并分支。
 
 a. 执行如下命令，查看当前所处分支。
 
@@ -702,6 +721,8 @@ git branch
 
 
 返回结果如下。
+
+![img](E:\大学笔记\大一下\Python微服务设计\linux笔记\Git命令\527b6dc85e4645019537cd3f6ec9a7a2.png)
 
 b. 执行如下命令，在当前分支test2下新建test2.txt文件
 
@@ -721,6 +742,7 @@ who are you?
 
 添加后的文件内容如下所示。
 
+![img](8a0edfc24c134241ace3f3fa556a78c8.png)
 
 c. 执行如下命令，将文件提交到暂存区。
 
@@ -740,6 +762,7 @@ git commit -m 'test2分支新文件'
 
 返回结果如下，您可看到test2.txt已经成功提交到本地仓库。
 
+![img](2b35ff4e11c14e168a25e9cdc617515c.png)
 
 e. 执行如下命令，切换到master分支。
 
@@ -759,8 +782,9 @@ ls
 
 
 
+![img](3513a2b549f34abdbd04440cde3bbf9d.png)
 
-##g. 执行如下命令，将test2分支合并到当前master分支。
+## g. 执行如下命令，将test2分支合并到当前master分支。
 
 ```
 git merge test2
@@ -770,6 +794,7 @@ git merge test2
 
 返回结果如下，您可以看到分支合并成功。
 
+![img](9668bd79690149969d73958b69a9617d.png)
 
 h. 执行如下命令，查看master分支下是否包含test2.txt文件。
 
@@ -781,6 +806,7 @@ ls
 
 返回结果如下，您可以看到master分支下有test2.txt文件。
 
+![img](da3c4b00098245ed885b06a1f9edfe0b.png)
 
 
 
