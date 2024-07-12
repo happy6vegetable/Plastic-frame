@@ -10,5 +10,8 @@ cv2.imshow("image", image)
 cv2.imshow("gauss", gauss)
 cv2.imshow("median", median)
 
+cv2.imwrite('./result/result.jpg',gauss)
+
+
 cv2.waitKey()
 
